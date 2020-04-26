@@ -1,35 +1,44 @@
 @tailwind base;
 @tailwind components;
 
+.form-label {
+  @apply block text-gray-700 text-sm font-bold mb-2;
+}
+
+.form-input {
+  @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight;
+}
+
+.error-input {
+  @apply border-red-500;
+}
+
+.error-message {
+  @apply text-red-500 text-xs italic;
+}
+
+.link {
+  @apply font-bold text-sm text-blue-500;
+}
+
+.link:hover {
+  @apply text-blue-800;
+}
+
 .btn {
-  @apply inline-block px-5 py-3 rounded-lg uppercase tracking-wider font-semibold;
+  @apply text-white font-bold py-2 px-4 rounded;
 }
 
 .btn:focus {
   @apply outline-none shadow-outline;
 }
 
-.btn-indigo {
-  @apply bg-indigo-500 text-white;
+.btn-blue {
+  @apply bg-blue-500;
 }
 
-.btn-indigo:hover {
-  @apply bg-indigo-400;
-}
-.btn-indigo:active {
-  @apply bg-indigo-600;
-}
-
-.btn-gray {
-  @apply bg-gray-500 text-indigo;
-}
-
-.btn-gray:hover {
-  @apply bg-gray-400;
-}
-
-.btn-gray:active {
-  @apply bg-gray-500;
+.btn-blue:hover {
+  @apply bg-blue-700;
 }
 
 @tailwind utilities;
