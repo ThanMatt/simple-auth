@@ -18,11 +18,19 @@
 }
 
 .link {
-  @apply font-bold text-sm text-blue-500;
+  @apply font-bold text-blue-500;
 }
 
 .link:hover {
   @apply text-blue-800;
+}
+
+.form-container {
+  @apply flex-auto bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4;
+}
+
+.boring-text {
+  @apply text-sm text-gray-500 mt-5;
 }
 
 .btn {
@@ -39,6 +47,30 @@
 
 .btn-blue:hover {
   @apply bg-blue-700;
+}
+
+.container-center {
+  @apply flex justify-center;
+}
+
+@screen sm {
+  .form-container {
+    @apply max-w-sm;
+  }
+
+  .container-center {
+    @apply py-16;
+  }
+}
+
+@screen lg {
+  .form-container {
+    @apply max-w-lg;
+  }
+
+  .container-center {
+    @apply py-20;
+  }
 }
 
 @tailwind utilities;
